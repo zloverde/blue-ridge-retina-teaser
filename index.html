@@ -13,12 +13,9 @@
   <title>Blue Ridge Retina</title>
   <style>
     /*
-      Logo asset: the original file had a flat white background. This page
-      uses logo-transparent.png (white keyed to alpha). If you ever need to
-      fall back to logo.png with a white matte on this navy field, try either
-      a short padding plus background: #fff on the img, or mix-blend-mode:
-      multiply on the img — multiply typically dissolves the white more evenly
-      than a padded box; compare in-browser and pick the cleaner match.
+      Logo: logo-transparent.png is generated from logo.png (near-white matte
+      removed to alpha). Regenerate with the Pillow + NumPy script when the
+      source artwork changes.
     */
     *,
     *::before,
@@ -56,6 +53,7 @@
       max-width: 260px;
       width: 100%;
       height: auto;
+      background: transparent;
     }
     @media (min-width: 768px) {
       main img {
