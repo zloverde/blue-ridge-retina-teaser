@@ -1,6 +1,6 @@
 <!--
-  Cloudflare Pages (static): Place index.html and logo-transparent.png in the
-  same directory. Push to GitHub, connect the repo to Cloudflare Pages, use no
+  Cloudflare Pages (static): Place index.html and logo.png in the same
+  directory. Push to GitHub, connect the repo to Cloudflare Pages, use no
   build command, and set the publish directory to the folder that contains
   index.html (often "/" at the repository root).
 -->
@@ -12,11 +12,6 @@
   <meta name="description" content="Retina specialty care coming soon">
   <title>Blue Ridge Retina</title>
   <style>
-    /*
-      Logo: logo-transparent.png is generated from logo.png (near-white matte
-      removed to alpha). Regenerate with the Pillow + NumPy script when the
-      source artwork changes.
-    */
     *,
     *::before,
     *::after {
@@ -37,8 +32,8 @@
         max(1.25rem, env(safe-area-inset-right))
         max(1.25rem, env(safe-area-inset-bottom))
         max(1.25rem, env(safe-area-inset-left));
-      background: #1a2b5e;
-      color: #ffffff;
+      background: #ffffff;
+      color: #1a2b5e;
     }
     main {
       display: flex;
@@ -53,7 +48,6 @@
       max-width: 260px;
       width: 100%;
       height: auto;
-      background: transparent;
     }
     @media (min-width: 768px) {
       main img {
@@ -67,14 +61,14 @@
       font-weight: 400;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: #a8bdd4;
+      color: #1a2b5e;
     }
   </style>
 </head>
 <body>
   <main>
     <img
-      src="logo-transparent.png"
+      src="logo.png"
       width="1024"
       height="682"
       alt="Blue Ridge Retina"
